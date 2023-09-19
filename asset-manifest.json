@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-tutorial/static/css/main.9be4a7ed.css",
+    "main.js": "/react-tutorial/static/js/main.c8477408.js",
+    "static/media/holberton-logo.jpg": "/react-tutorial/static/media/holberton-logo.a74edfdfa4e1be32bf0c.jpg",
+    "index.html": "/react-tutorial/index.html",
+    "main.9be4a7ed.css.map": "/react-tutorial/static/css/main.9be4a7ed.css.map",
+    "main.c8477408.js.map": "/react-tutorial/static/js/main.c8477408.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9be4a7ed.css",
+    "static/js/main.c8477408.js"
+  ]
+}
