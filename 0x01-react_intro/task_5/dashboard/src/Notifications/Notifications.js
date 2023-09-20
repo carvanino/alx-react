@@ -1,5 +1,6 @@
 import React from 'react';
-import closeIcon from '../assets/close-icon.png';
+// import closeIcon from '../assets/close-icon.png';
+const closeIcon = require("../assets/close-icon.png");
 // import { createPortal } from 'react-dom';
 import './Notifications.css';
 import { getLatestNotification } from '../utils/utils';
@@ -27,3 +28,5 @@ export default function Notifications() {
     //     </div>
     // )
 }
+
+// module.exports = { Notifications };

@@ -1,6 +1,8 @@
+import React from "react";
 import { shallow, mount, render } from 'enzyme';
-import '../setupTest';
+import '../../config/setupTest';
 import App from './App';
+// const App = require('./App');
 
 describe('<App />', () => {
 

@@ -1,5 +1,7 @@
-import './setupTest';
+import React from "react";
+import '../../config/setupTest';
 import Notifications from './Notifications';
+// const Notifications = require('./Notifications');
 
 import { shallow } from 'enzyme';
 
