@@ -1,5 +1,5 @@
 import { shallow, mount, render } from 'enzyme';
-import './setupTest';
+import '../setupTest';
 import App from './App';
 
 describe('<App />', () => {

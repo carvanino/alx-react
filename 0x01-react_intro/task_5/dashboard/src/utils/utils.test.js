@@ -1,5 +1,5 @@
 const assert = require('assert');
-import { getFooterCopy, getFullYear, getLatestNotification } from "../../../task_2/dashboard/src/utils";
+import { getFooterCopy, getFullYear, getLatestNotification } from "../../../../task_2/dashboard/src/utils";
 
 describe('getFullYear', () => {
     it('Should return the current year', () => {

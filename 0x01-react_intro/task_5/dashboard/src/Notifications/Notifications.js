@@ -1,8 +1,8 @@
 import React from 'react';
-import closeIcon from './close-icon.png';
+import closeIcon from '../assets/close-icon.png';
 // import { createPortal } from 'react-dom';
 import './Notifications.css';
-import { getLatestNotification } from './utils';
+import { getLatestNotification } from '../utils/utils';
 
 export default function Notifications() {
     const handleButtonClick = () => {
