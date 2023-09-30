@@ -1,0 +1,15 @@
+table, th {
+    border: 1px solid #D1D1D1BA;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+#CourseList th[colspan="2"] {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    position: relative;
+    padding: 40px;
+}
