@@ -33,10 +33,12 @@ module.exports = {
         ]
     },
     plugins: [
-        // new CleanWebpackPlugin(),
+        new CleanWebpackPlugin({
+            cleanOnceBeforeBuildPatterns: ['**/*', '!*.ico']
+        }),
         new HtmlWebpackPlugin({
             title: 'Webpack & React',
-            template: './dist/index.html',
+            template: './src/index.html',
             inject: 'body',
             favicon: './dist/holberton-favi.ico'
         })
