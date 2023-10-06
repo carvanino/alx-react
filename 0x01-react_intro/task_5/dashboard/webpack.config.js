@@ -1,19 +1,23 @@
 const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, '../dist'),
+        path: path.resolve(__dirname, './dist'),
         filename: 'bundle.js'
     },
-    mode: "development",
+    mode: 'development',
     devtool: 'inline-source-map',
+    devServer: {
+        static: path.join(__dirname, "dist"),
+        hot: true
+    },
     module: {
         rules: [
             {
                 test: /\.(js|jsx)$/,
-                // test: /\.js$/,
                 exclude: /node_modules/,
                 use: ["babel-loader"]
             },
@@ -28,14 +32,13 @@ module.exports = {
 
         ]
     },
-    devServer: {
-        static: "../dist",
-        // contentBase: path.join(__dirname, "dist"),
-        open: true
-    },
     plugins: [
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-          template: './dist/index.html'
+            title: 'Webpack & React',
+            template: './dist/index.html',
+            inject: 'body',
+            favicon: './dist/holberton-favi.ico'
         })
-      ]
+    ]
 }

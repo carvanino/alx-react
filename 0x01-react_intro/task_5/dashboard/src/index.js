@@ -1,23 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App/App';
-import Notifications from './Notifications/Notifications';
-// const {Notifications} = require('./Notifications/Notifications');
-// const {App} = require('./App/App');
+console.log('In there');
 
-// Render your App component to the 'root' element
+const newElemet =  (text = "Hello, Webpack!") => {
+    const element = document.createElement("h1");
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+    element.innerHTML = text;
 
-// Render your Notifications component to the 'root-notifications' element
-ReactDOM.render(
-  <React.StrictMode>
-    <Notifications />
-  </React.StrictMode>,
-  document.getElementById('root-notifications')
-);
+    return element
+}
+
+document.body.appendChild(newElemet());
