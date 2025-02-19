@@ -1,0 +1,26 @@
+div.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.App-body {
+  /* margin-top: 20px; */
+  /* margin-right: 40px; */
+  border-bottom: 3px solid #e0354b;
+  padding: 15px;
+  height: 25vh;
+}
+
+.App-body p {
+  margin-left: 35px;
+  
+}
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+

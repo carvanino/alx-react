@@ -1,0 +1,19 @@
+.Notifications {
+    border: 2px dashed red;
+    padding: 15px;
+    width: 400px;
+}
+
+li[data-notification-type="default"] {
+    color: blue;
+}
+
+li[data-notification-type='urgent'] {
+    color: red;
+}
+
+div.menuItem {
+    text-align: right;
+}
+
+
