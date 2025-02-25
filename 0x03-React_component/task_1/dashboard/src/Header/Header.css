@@ -1,0 +1,11 @@
+.App-header {
+    display: flex;
+    /* margin-right: 10px; */
+    flex-direction: row;
+    align-items: center;
+    color: #e0354b;
+    border-bottom: 3px solid #e0354b;
+    padding: 15px;
+  }
+
+  

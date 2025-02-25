@@ -1,6 +1,6 @@
 const assert = require('assert');
 // import { getFooterCopy, getFullYear, getLatestNotification } from "../../../../task_2/dashboard/src/utils";
-const { getFooterCopy, getFullYear, getLatestNotification } = require("../utils/utils");
+const  { getFooterCopy, getFullYear, getLatestNotification } = require("../utils/utils");
 
 
 describe('getFullYear', () => {

@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { shallow, mount, render } from 'enzyme';
 import '../../config/setupTest';
@@ -43,13 +41,13 @@ describe('<App />', () => {
 
 
     describe('The App Component with the prop isLoggedIn', () => {
-        const wrapper = mount(<App isLoggedIn={true} />);
+        const wrapper = shallow(<App isLoggedIn={true} />);
         it('should verify that the Login Component is not Included', () => {
             expect(wrapper.contains(<Login />)).toBe(false);
         });
 
         it('should verify that the CourseList component is included', () => {
-            wrapper.setProps({ isLoggedIn: true })
+            wrapper.setProps({isLoggedIn: true})
             expect(wrapper.find('CourseList')).toHaveLength(1);
         });
     });

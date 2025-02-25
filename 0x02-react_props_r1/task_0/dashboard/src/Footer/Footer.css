@@ -1,0 +1,50 @@
+div.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  display: flex;
+  /* margin-right: 10px; */
+  flex-direction: row;
+  align-items: center;
+  color: #e0354b;
+  border-bottom: 3px solid #e0354b;
+  padding: 15px;
+}
+
+.App-body {
+  /* margin-top: 20px; */
+  /* margin-right: 40px; */
+  border-bottom: 3px solid #e0354b;
+  padding: 15px;
+  height: 25vh;
+}
+
+.App-body p {
+  margin-left: 35px;
+  
+}
+
+.App-footer {
+  /* position: fixed; */
+  padding: 15px;
+  /* width: 100%; */
+  /* bottom: 0; */
+  text-align: center;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+form {
+  margin-left: 35px;
+}
+
+form input{
+  display: inline;
+  margin: 15px;
+}
