@@ -26,7 +26,7 @@ describe('<App props/>', () => {
     it('should verify that a div with the class App-Body is rendered', () => {
         wrapper.setProps({isLoggedIn: false});
         expect(wrapper.find('.App-body').exists()).toBe(true);
-        expect(wrapper.find('Login').exists()).toBe(true);
+        expect(wrapper.find('withLogging(CourseList)').exists()).toBe(false);
     });
 
     it('should verify that a div with the class App-Footer is rendered', () => {
@@ -35,8 +35,8 @@ describe('<App props/>', () => {
 
     it('should verify the mainContent based on the isLoggedIn props', () => {
         wrapper.setProps({isLoggedIn: true});
-        expect(wrapper.find('CourseList').exists()).toBe(true);
-        expect(wrapper.find('Login').exists()).toBe(false);
+        expect(wrapper.find('withLogging(CourseList)').dive().find('CourseList').exists()).toBe(true);
+        expect(wrapper.find('withLogging(Login)').exists()).toBe(false);
     });
 });
 

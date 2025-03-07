@@ -9,7 +9,7 @@ describe('<App />', () => {
     let wrapper;
 
     beforeEach(() => {
-        wrapper = shallow(<Login />);
+        wrapper = shallow(<Login />).dive();
     });
 
     it('should render without crashing', () => {

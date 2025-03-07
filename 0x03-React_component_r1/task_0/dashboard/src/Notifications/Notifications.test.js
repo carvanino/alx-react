@@ -10,7 +10,7 @@ describe('<Notifications />', () => {
     let wrapper;
 
     beforeEach(() => {
-        wrapper = shallow(<Notifications displayDrawer />);
+        wrapper = shallow(<Notifications displayDrawer />).dive();
     });
 
     it('should test that the Notification component renders without crashing', () => {
