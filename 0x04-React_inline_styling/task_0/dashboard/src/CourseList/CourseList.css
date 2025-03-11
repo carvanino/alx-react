@@ -1,0 +1,16 @@
+table {
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+    border: 1px solid #e8e8e8;
+}
+
+thead th {
+    border-bottom: 2px solid #e8e8e8;
+}
+
+th[colspan="2"] {
+    text-align: center;
+    /* border: 1px solid blue; */
+    border-bottom: 2px solid #e8e8e8;
+}
